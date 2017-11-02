@@ -744,7 +744,7 @@
     UIPasteboard* pasteboard = [UIPasteboard generalPasteboard];
     NSString* string = pasteboard.string;
     if (string) {
-        [pasteboard setValue:string forPasteboardType:@"public.text"];
+        [pasteboard setValue:string forPasteboardType:(NSString *)kUTTypeUTF8PlainText];
     }
 }
 
